@@ -13,11 +13,11 @@
 use App\Http\Controllers\UserAuth;
 
 Route::get('/', function () {
-    return view('home');
+    return view('pages.home');
 });
 
 Route::get('/about-us', function () {
-    return view('about');
+    return view('pages.about');
 });
 
 Route::post("user", [UserAuth::class,'userLogin']);
@@ -25,13 +25,13 @@ Route::post("user", [UserAuth::class,'userLogin']);
 Route::get('/login', function () {
     if(session()->has('user'))
     {
-        return  redirect('profile');
+        return  redirect('pages.profile');
     }
-    return redirect('login');
+    return redirect('pages.login');
 });
 
 Route::get('/profile', function () {
-    return view('profile');
+    return view('pages.profile');
 });
 
 Route::get('/logout', function () {
@@ -39,5 +39,5 @@ Route::get('/logout', function () {
     {
         session()->pull('user');
     }
-    return redirect('login');
+    return redirect('pages.login');
 });
