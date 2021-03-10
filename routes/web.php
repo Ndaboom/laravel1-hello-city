@@ -27,7 +27,7 @@ Route::get('/login', function () {
     {
         return  redirect('pages.profile');
     }
-    return redirect('pages.login');
+    return view('pages.login');
 });
 
 Route::get('/profile', function () {
@@ -39,5 +39,5 @@ Route::get('/logout', function () {
     {
         session()->pull('user');
     }
-    return redirect('pages.login');
+    return view('pages.login');
 });
