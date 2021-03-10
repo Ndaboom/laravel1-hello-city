@@ -1,5 +1,9 @@
 @extends('base')
 
+@section('title')
+Login | Hello City
+@endsection
+
 @section('content')
        <h1>User login</h1>
        <form action="user" method="POST">
