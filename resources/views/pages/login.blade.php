@@ -1,8 +1,6 @@
 @extends('base')
 
-@section('title')
-Login | Hello City
-@endsection
+@section('title','Login | Hello City')
 
 @section('content')
        <h1>User login</h1>

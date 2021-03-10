@@ -1,8 +1,6 @@
 @extends('base')
 
-@section('title')
-Profile | Hello City
-@endsection
+@section('title','Profile | Hello City')
 
 @section('content')
         <h1>{{session('user')}} Profile page</h1>
