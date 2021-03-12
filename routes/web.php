@@ -18,7 +18,7 @@ Route::get('/', function () {
 
 Route::get('/about-us', function () {
     return view('pages.about');
-})->name('home_page');
+})->name('about_page');
 
 Route::post("user", [UserAuth::class,'userLogin']);
 
