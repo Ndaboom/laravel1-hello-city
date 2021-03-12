@@ -1,6 +1,6 @@
 @extends('base')
 
-@section('title','Profile | Hello City')
+@section('title','Profile | '.config('app.name'))
 
 @section('content')
         <h1>{{session('user')}} Profile page</h1>

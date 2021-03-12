@@ -1,6 +1,6 @@
 @extends('base')
 
-@section('title','Login | Hello City')
+@section('title','Login | '.config('app.name'))
 
 @section('content')
        <h1>User login</h1>

@@ -1,6 +1,6 @@
 @extends('base')
 
-@section('title', 'Hello City')
+@section('title', ''.config('app.name'))
 
 @section('content')
         <h1>Hello from Goma!</h1>

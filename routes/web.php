@@ -14,11 +14,11 @@ use App\Http\Controllers\UserAuth;
 
 Route::get('/', function () {
     return view('pages.home');
-});
+})->name('root_path');
 
 Route::get('/about-us', function () {
     return view('pages.about');
-});
+})->name('home_page');
 
 Route::post("user", [UserAuth::class,'userLogin']);
 
@@ -28,11 +28,11 @@ Route::get('/login', function () {
         return  view('pages.profile');
     }
     return view('pages.login');
-});
+})->name('login_page');
 
 Route::get('/profile', function () {
     return view('pages.profile');
-});
+})->name('profile_page');
 
 Route::get('/logout', function () {
     if(session()->has('user'))
@@ -45,4 +45,4 @@ Route::get('/logout', function () {
 Route::get('/help', function () {
     
     return view('pages.help');
-});
+})->name('help_page');
