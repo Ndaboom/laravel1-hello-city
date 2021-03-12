@@ -25,7 +25,7 @@ Route::post("user", [UserAuth::class,'userLogin']);
 Route::get('/login', function () {
     if(session()->has('user'))
     {
-        return  redirect('pages.profile');
+        return  view('pages.profile');
     }
     return view('pages.login');
 });
@@ -40,4 +40,9 @@ Route::get('/logout', function () {
         session()->pull('user');
     }
     return view('pages.login');
+});
+
+Route::get('/help', function () {
+    
+    return view('pages.help');
 });
