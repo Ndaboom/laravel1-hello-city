@@ -5,8 +5,8 @@
 @section('content')
         <h1>About </h1>
 
-        <p>Built with &hearts; by SAMMY NDABO.</p>
+        <p>Built with <span class="text-pink-500" >&hearts;</span> by SAMMY NDABO.</p>
 
-        <p><a href="/">Revenir a la page d'accueil</a></p>
+        <p><a href="/" class="text-indigo-500 hover:text-indigo-600 underline" >Revenir a la page d'accueil</a></p>
 @endsection
    
